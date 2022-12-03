@@ -27,9 +27,9 @@ console.log(reverseNum(123))
 // Function `countVowel` returns the number of vowels in input string.
 // console.log(countVowel("Hello")) //2
 function countVowel(str) {
-    var count = 0;
+    let count = 0;
     str=str.toLowerCase();
-    for(var i=0;i<str.length;i++){
+    for(let i=0;i<str.length;i++){
     if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||
         str.charAt(i)=="o"||str.charAt(i)=="u"){
         count++;
@@ -45,7 +45,7 @@ console.log(countVowel("Hello"))
 // console.log(findPalindrome("racecar")) //true
 
 function checkPalindrome(str) {
-    for(var i=0;i<str.length;i++){
+    for(let i=0;i<str.length;i++){
     if(str.charAt(i)!=str.charAt(str.length-i-1)){ 
         return false;
     }
